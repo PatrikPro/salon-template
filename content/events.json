@@ -1,0 +1,46 @@
+[
+  {
+    "id": "latte-art-streda",
+    "title": "Latte Art středa",
+    "description": "Krátký workshop pro začátečníky. Naučíme tě základy latte artu – srdíčko, rosetta, tulipán.",
+    "frequency": "1× měsíčně",
+    "day": "středa",
+    "time": "17:00–19:00",
+    "price": "249 Kč",
+    "cta": "Chci místo",
+    "image": "/images/gallery-1.svg"
+  },
+  {
+    "id": "ticha-nedele",
+    "title": "Tichá neděle",
+    "description": "Méně hudby, víc soustředění. Ideální pro studium a deep work.",
+    "frequency": "každou neděli",
+    "day": "neděle",
+    "time": "9:00–12:00",
+    "price": "zdarma",
+    "cta": "Chci místo",
+    "image": "/images/gallery-2.svg"
+  },
+  {
+    "id": "open-mic",
+    "title": "Open mic",
+    "description": "Poezie, hudba, stand‑up. Přijď poslouchat nebo vystoupit.",
+    "frequency": "jednou za 2 týdny",
+    "day": "pátek",
+    "time": "19:00–21:00",
+    "price": "vstup dobrovolný",
+    "cta": "Chci místo",
+    "image": "/images/gallery-3.svg"
+  },
+  {
+    "id": "studentske-odpoledne",
+    "title": "Studentské odpoledne",
+    "description": "S ISIC -10 % na filtrovanou kávu. Studuj u nás!",
+    "frequency": "Po–Čt",
+    "day": "pondělí–čtvrtek",
+    "time": "14:00–17:00",
+    "price": "-10 % s ISIC",
+    "cta": "Přijď",
+    "image": "/images/gallery-1.svg"
+  }
+]

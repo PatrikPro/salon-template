@@ -1,0 +1,44 @@
+[
+  {
+    "id": "review-1",
+    "text": "Nejlepší flat white v okolí. A konečně dost zásuvek.",
+    "author": "Klára",
+    "role": "studentka",
+    "rating": 5
+  },
+  {
+    "id": "review-2",
+    "text": "Pracovní ráno tu jde samo. Klid, světlo a super obsluha.",
+    "author": "Martin",
+    "role": "UX designer",
+    "rating": 5
+  },
+  {
+    "id": "review-3",
+    "text": "Ovesné latte + banana bread = top kombinace.",
+    "author": "Ema",
+    "role": "místní",
+    "rating": 5
+  },
+  {
+    "id": "review-4",
+    "text": "Příjemná atmosféra a skvělé filtrované.",
+    "author": "Jakub",
+    "role": "digitální nomád",
+    "rating": 4
+  },
+  {
+    "id": "review-5",
+    "text": "Menu přehledné, rezervace bez stresu.",
+    "author": "Petra",
+    "role": "freelancerka",
+    "rating": 5
+  },
+  {
+    "id": "review-6",
+    "text": "Vždycky milí. A káva konzistentní.",
+    "author": "Ondřej",
+    "role": "zákazník",
+    "rating": 4
+  }
+]

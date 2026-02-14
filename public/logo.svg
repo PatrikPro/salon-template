@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Coffee bean -->
+  <ellipse cx="18" cy="24" rx="12" ry="16" fill="#6B4F3A" transform="rotate(-15 18 24)"/>
+  <path d="M12 14c4 4 4 16 0 20" stroke="#F5EDE2" stroke-width="2" stroke-linecap="round"/>
+  <!-- Steam -->
+  <path d="M30 18c2-4 0-6 2-10" stroke="#7FB77E" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M35 20c2-4 0-6 2-10" stroke="#7FB77E" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M40 18c2-4 0-6 2-10" stroke="#7FB77E" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+</svg>
