@@ -21,8 +21,8 @@ const merriweather = Merriweather({
 /* ===== Globální metadata (SEO) ===== */
 export const metadata: Metadata = {
   title: {
-    default: "Kavárna Mletá & Měkká – Výběrová káva v centru Prahy",
-    template: "%s | Kavárna Mletá & Měkká",
+    default: "Zuzu Café – Výběrová káva v centru Prahy",
+    template: "%s | Zuzu Café",
   },
   description:
     "Útulná kavárna s výběrovou kávou, rychlou Wi‑Fi a zásuvkami u každého stolu. Ideální místo pro studium, práci i setkání s přáteli.",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "cs_CZ",
-    siteName: "Kavárna Mletá & Měkká",
+    siteName: "Zuzu Café",
   },
   twitter: {
     card: "summary_large_image",

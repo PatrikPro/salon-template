@@ -4,7 +4,7 @@ import { ReservationForm } from "./ReservationForm";
 export const metadata: Metadata = {
   title: "Rezervace",
   description:
-    "Zarezervuj si stůl v Kavárně Mletá & Měkká online. Rychle a jednoduše.",
+    "Zarezervuj si stůl v Zuzu Café online. Rychle a jednoduše.",
 };
 
 export default function ReservationPage() {

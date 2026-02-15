@@ -1,4 +1,4 @@
-# 🚀 Deployment – Kavárna Mletá & Měkká
+# 🚀 Deployment – Zuzu Café
 
 ## Deploy na Vercel
 
@@ -8,7 +8,7 @@
    ```bash
    git init
    git add .
-   git commit -m "Initial commit: Kavárna Mletá & Měkká"
+   git commit -m "Initial commit: Zuzu Café"
    git remote add origin <repo-url>
    git push -u origin main
    ```

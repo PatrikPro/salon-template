@@ -5,7 +5,7 @@ import { MenuClient } from "./MenuClient";
 export const metadata: Metadata = {
   title: "Menu",
   description:
-    "Kompletní nabídka Kavárny Mletá & Měkká – espresso, mléčné, filtrované, čaj, sladké i snídaně.",
+    "Kompletní nabídka Zuzu Café – espresso, mléčné, filtrované, čaj, sladké i snídaně.",
 };
 
 /**

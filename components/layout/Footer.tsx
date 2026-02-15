@@ -60,8 +60,8 @@ export function Footer() {
               <li className="flex items-center gap-2">
                 <FiMail className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
                 {/* UNSPECIFIED – placeholder e-mail */}
-                <a href="mailto:ahoj@kavarnamleta.cz" className="hover:text-white transition-colors">
-                  ahoj@kavarnamleta.cz
+                <a href="mailto:kontakt@zuzucafe.cz" className="hover:text-white transition-colors">
+                  kontakt@zuzucafe.cz
                 </a>
               </li>
             </ul>
@@ -194,7 +194,7 @@ export function Footer() {
         {/* Spodní lišta */}
         <div className="mt-10 pt-6 border-t border-coffee-700 text-center text-xs text-coffee-400">
           <p>
-            © {new Date().getFullYear()} Kavárna Mletá &amp; Měkká. Všechna práva
+            © {new Date().getFullYear()} Zuzu Café. Všechna práva
             vyhrazena.
           </p>
         </div>

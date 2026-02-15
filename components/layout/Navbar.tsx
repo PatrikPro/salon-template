@@ -44,7 +44,7 @@ export function Navbar() {
             height={32}
             className="w-8 h-8"
           />
-          <span className="hidden sm:inline">Mletá &amp; Měkká</span>
+          <span className="hidden sm:inline">Zuzu Café</span>
         </Link>
 
         {/* Desktop links */}

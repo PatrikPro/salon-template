@@ -5,7 +5,7 @@ import { FiMapPin, FiPhone, FiMail, FiClock } from "react-icons/fi";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktuj Kavárnu Mletá & Měkká – formulář, telefon, e-mail, mapa a otevírací doba.",
+    "Kontaktuj Zuzu Café – formulář, telefon, e-mail, mapa a otevírací doba.",
 };
 
 export default function ContactPage() {
@@ -56,10 +56,10 @@ export default function ContactPage() {
                 <div>
                   <p className="font-sans font-semibold text-coffee">E-mail</p>
                   <a
-                    href="mailto:ahoj@kavarnamleta.cz"
+                    href="mailto:kontakt@zuzucafe.cz"
                     className="text-coffee-600 font-serif hover:text-coffee transition-colors"
                   >
-                    ahoj@kavarnamleta.cz
+                    kontakt@zuzucafe.cz
                   </a>
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
             {/* Mapa */}
             <div className="rounded-xl overflow-hidden shadow-md">
               <iframe
-                title="Mapa – Kavárna Mletá &amp; Měkká"
+                title="Mapa – Zuzu Café"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.5!2d14.4241!3d50.0755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDA0JzMxLjgiTiAxNMKwMjUnMjcuMSJF!5e0!3m2!1scs!2scz!4v1"
                 width="100%"
                 height="300"

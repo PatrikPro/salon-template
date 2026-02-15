@@ -1,12 +1,12 @@
-# ☕ Kavárna Mletá & Měkká – Web
+# ☕ Zuzu Café – Web
 
 Moderní, responzivní, reprezentativní web pro kavárnu. Postavený na **Next.js 15 + TypeScript + Tailwind CSS**.
 
 > **UNSPECIFIED defaults** (lze změnit – hledej komentáře `UNSPECIFIED` v kódu):
-> - Název kavárny: *Kavárna Mletá & Měkká*
+> - Název kavárny: *Zuzu Café*
 > - Adresa: Školská 12, Praha 2
 > - Telefon: +420 777 123 456
-> - E-mail: ahoj@kavarnamleta.cz
+> - E-mail: kontakt@zuzucafe.cz
 > - Otevírací doba: Po–Pá 8–20, So 9–21, Ne 9–18
 > - Max osob online: 8
 > - Ukládání rezervací: in-memory (demo) – viz upgrade path níže

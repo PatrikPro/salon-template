@@ -7,7 +7,7 @@ import { Reviews } from "@/components/sections/Reviews";
 import { ContactBlock } from "@/components/sections/ContactBlock";
 
 /**
- * Homepage – Kavárna Mletá & Měkká
+ * Homepage – Zuzu Café
  * Sestavena z jednotlivých sekcí (Server Components).
  */
 export default function HomePage() {

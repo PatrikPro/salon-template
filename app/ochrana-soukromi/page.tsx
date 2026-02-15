@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Ochrana soukromí",
-  description: "Informace o zpracování osobních údajů – Kavárna Mletá & Měkká.",
+  description: "Informace o zpracování osobních údajů – Zuzu Café.",
 };
 
 /**
@@ -24,8 +24,8 @@ export default function PrivacyPage() {
             </h2>
             {/* UNSPECIFIED – placeholder */}
             <p>
-              Správcem osobních údajů je Kavárna Mletá &amp; Měkká, Školská 12,
-              Praha 2. E‑mail: ahoj@kavarnamleta.cz.
+              Správcem osobních údajů je Zuzu Café, Školská 12,
+              Praha 2. E‑mail: kontakt@zuzucafe.cz.
             </p>
           </section>
 
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
             <p>
               Máte právo na přístup, opravu, výmaz, omezení zpracování a
               přenositelnost údajů. Pro uplatnění práv nás kontaktujte na
-              ahoj@kavarnamleta.cz.
+              kontakt@zuzucafe.cz.
             </p>
           </section>
 

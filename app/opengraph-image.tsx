@@ -9,7 +9,7 @@ export const size = {
 
 export const contentType = "image/png";
 export const alt =
-  "Kavárna Mletá & Měkká – Výběrová káva v centru Prahy";
+  "Zuzu Café – Výběrová káva v centru Prahy";
 
 /**
  * Generovaný OG image pro sociální sítě.
@@ -50,7 +50,7 @@ export default async function OgImage() {
             maxWidth: "80%",
           }}
         >
-          Kavárna Mletá &amp; Měkká
+          Zuzu Café
         </div>
 
         {/* Subtitle */}
