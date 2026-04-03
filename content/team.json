@@ -1,0 +1,12 @@
+{
+  "members": [
+    {
+      "id": "luna-founder",
+      "name": "Elena Nováková",
+      "role": "Zakladatelka · hlavní stylistka",
+      "bio": "Více než desetiletá praxe v prémiové vlasové kosmetice. Zaměřuji se na přirozené střihy, barvení a celkový obraz klientky. Věřím, že skvělý výsledek začíná nasloucháním.",
+      "image": "/images/salon-styling.svg",
+      "order": 1
+    }
+  ]
+}

@@ -12,14 +12,14 @@ describe("Button", () => {
   it("applies primary variant styles by default", () => {
     render(<Button>Primary</Button>);
     const btn = screen.getByRole("button");
-    expect(btn.className).toContain("bg-coffee");
-    expect(btn.className).toContain("text-white");
+    expect(btn.className).toContain("bg-luna-ink");
+    expect(btn.className).toContain("text-luna-ivory");
   });
 
   it("applies secondary variant styles", () => {
     render(<Button variant="secondary">Secondary</Button>);
     const btn = screen.getByRole("button");
-    expect(btn.className).toContain("bg-cream-300");
+    expect(btn.className).toContain("bg-luna-champagne");
   });
 
   it("applies ghost variant styles", () => {
@@ -33,7 +33,7 @@ describe("Button", () => {
     expect(screen.getByRole("button").className).toContain("px-3");
 
     rerender(<Button size="lg">Lg</Button>);
-    expect(screen.getByRole("button").className).toContain("px-7");
+    expect(screen.getByRole("button").className).toContain("px-8");
   });
 
   it("handles full width", () => {

@@ -1,62 +1,70 @@
 import type { Metadata } from "next";
-import { Inter, Merriweather } from "next/font/google";
+import { Inter, Cormorant_Garamond } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import {
+  loadSiteContent,
+  loadOpeningHours,
+} from "@/lib/cms/loadContent";
 import "./globals.css";
 
-/* ===== Fonty (next/font/google) ===== */
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
   variable: "--font-inter",
   display: "swap",
 });
 
-const merriweather = Merriweather({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "700", "900"],
-  variable: "--font-merriweather",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cormorant",
   display: "swap",
 });
 
-/* ===== Globální metadata (SEO) ===== */
 export const metadata: Metadata = {
   title: {
-    default: "Zuzu Café – Výběrová káva v centru Prahy",
-    template: "%s | Zuzu Café",
+    default: "Luna Studio – Prémiový beauty salon",
+    template: "%s | Luna Studio",
   },
   description:
-    "Útulná kavárna s výběrovou kávou, rychlou Wi‑Fi a zásuvkami u každého stolu. Ideální místo pro studium, práci i setkání s přáteli.",
+    "Prémiová péče o vlasy a beauty služby v elegantním prostředí. Luna Studio — individuální přístup, klid a profesionální výsledek.",
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
   ),
   openGraph: {
     type: "website",
     locale: "cs_CZ",
-    siteName: "Zuzu Café",
+    siteName: "Luna Studio",
   },
   twitter: {
     card: "summary_large_image",
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const site = await loadSiteContent();
+  const openingHours = await loadOpeningHours();
+
   return (
-    <html lang="cs" className={`${inter.variable} ${merriweather.variable}`}>
+    <html lang="cs" className={`${inter.variable} ${cormorant.variable}`}>
       <body className="flex flex-col min-h-screen">
-        {/* Skip link pro klávesnicovou navigaci (a11y) */}
         <a href="#main-content" className="skip-link">
           Přeskočit na obsah
         </a>
 
-        <Navbar />
+        <Navbar brandName={site.brandName} />
 
         <div className="flex-1">{children}</div>
 
-        <Footer />
+        <Footer
+          brandName={site.brandName}
+          contact={site.contact}
+          openingHours={openingHours}
+        />
       </body>
     </html>
   );

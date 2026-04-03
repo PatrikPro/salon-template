@@ -2,28 +2,51 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { FiInstagram, FiFacebook, FiMail, FiMapPin, FiPhone } from "react-icons/fi";
+import {
+  FiInstagram,
+  FiFacebook,
+  FiMail,
+  FiMapPin,
+  FiPhone,
+} from "react-icons/fi";
 import { Button } from "@/components/ui/Button";
 import { Toast } from "@/components/ui/Toast";
+import type { SiteContact } from "@/lib/cms/types";
+import type { OpeningHoursData } from "@/lib/cms/types";
 
-/**
- * Globální footer s kontaktními údaji, sociálními sítěmi a newsletter signup.
- */
-export function Footer() {
+function formatOpeningLines(hours: OpeningHoursData): string[] {
+  if (!hours.days.length) {
+    return ["Doplňte otevírací dobu v souboru content/openingHours.json"];
+  }
+  return hours.days.map((d) => {
+    if (d.closed) {
+      return `${d.label}: ${d.note ?? "Zavřeno"}`;
+    }
+    return `${d.label}: ${d.hours ?? "—"}`;
+  });
+}
+
+export function Footer({
+  brandName,
+  contact,
+  openingHours,
+}: {
+  brandName: string;
+  contact: SiteContact;
+  openingHours: OpeningHoursData;
+}) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
   const handleNewsletter = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("idle");
-
     try {
       const res = await fetch("/api/newsletter", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
       });
-
       if (res.ok) {
         setStatus("success");
         setEmail("");
@@ -35,119 +58,142 @@ export function Footer() {
     }
   };
 
+  const phoneHref = contact.phone.replace(/\s/g, "");
+  const hoursLines = formatOpeningLines(openingHours);
+
   return (
-    <footer className="bg-coffee-800 text-cream-100" role="contentinfo">
-      <div className="container-main py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Kontakt */}
+    <footer
+      className="bg-luna-ink text-luna-ivory/95 border-t border-luna-stone/30"
+      role="contentinfo"
+    >
+      <div className="container-main py-16 md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10">
           <div>
-            <h3 className="text-lg font-sans font-bold text-white mb-4">
+            <h3 className="text-lg font-serif font-semibold text-luna-ivory mb-5">
               Kontakt
             </h3>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-center gap-2">
-                <FiMapPin className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
-                {/* UNSPECIFIED – placeholder adresa */}
-                <span>Školská 12, Praha 2</span>
+            <ul className="space-y-3 text-sm font-sans text-luna-champagne/90">
+              <li className="flex items-start gap-2.5">
+                <FiMapPin className="w-4 h-4 flex-shrink-0 mt-0.5 text-luna-rose" aria-hidden />
+                <span>{contact.address || "—"}</span>
               </li>
-              <li className="flex items-center gap-2">
-                <FiPhone className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
-                {/* UNSPECIFIED – placeholder telefon */}
-                <a href="tel:+420777123456" className="hover:text-white transition-colors">
-                  +420 777 123 456
-                </a>
+              <li className="flex items-center gap-2.5">
+                <FiPhone className="w-4 h-4 flex-shrink-0 text-luna-rose" aria-hidden />
+                {contact.phone ? (
+                  <a
+                    href={`tel:${phoneHref}`}
+                    className="hover:text-luna-ivory transition-colors"
+                  >
+                    {contact.phone}
+                  </a>
+                ) : (
+                  "—"
+                )}
               </li>
-              <li className="flex items-center gap-2">
-                <FiMail className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
-                {/* UNSPECIFIED – placeholder e-mail */}
-                <a href="mailto:kontakt@zuzucafe.cz" className="hover:text-white transition-colors">
-                  kontakt@zuzucafe.cz
-                </a>
+              <li className="flex items-center gap-2.5">
+                <FiMail className="w-4 h-4 flex-shrink-0 text-luna-rose" aria-hidden />
+                {contact.email ? (
+                  <a
+                    href={`mailto:${contact.email}`}
+                    className="hover:text-luna-ivory transition-colors"
+                  >
+                    {contact.email}
+                  </a>
+                ) : (
+                  "—"
+                )}
               </li>
             </ul>
 
-            {/* Otevírací doba */}
-            <div className="mt-4">
-              <h4 className="text-sm font-sans font-semibold text-white mb-1">
+            <div className="mt-6">
+              <h4 className="text-xs font-sans font-semibold uppercase tracking-widest text-luna-rose mb-2">
                 Otevírací doba
               </h4>
-              <ul className="text-sm space-y-0.5">
-                {/* UNSPECIFIED – placeholder otevírací doba */}
-                <li>Po–Pá: 8:00–20:00</li>
-                <li>So: 9:00–21:00</li>
-                <li>Ne: 9:00–18:00</li>
+              <ul className="text-sm font-sans text-luna-champagne/85 space-y-1">
+                {hoursLines.map((line, i) => (
+                  <li key={i}>{line}</li>
+                ))}
               </ul>
+              {openingHours.note && (
+                <p className="text-xs text-luna-stone mt-2">{openingHours.note}</p>
+              )}
             </div>
           </div>
 
-          {/* Navigace */}
           <div>
-            <h3 className="text-lg font-sans font-bold text-white mb-4">
+            <h3 className="text-lg font-serif font-semibold text-luna-ivory mb-5">
               Navigace
             </h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2.5 text-sm font-sans">
               <li>
-                <Link href="/" className="hover:text-white transition-colors">
-                  Domů
+                <Link
+                  href="/sluzby"
+                  className="text-luna-champagne/90 hover:text-luna-ivory transition-colors"
+                >
+                  Služby a ceny
                 </Link>
               </li>
               <li>
-                <Link href="/menu" className="hover:text-white transition-colors">
-                  Menu
-                </Link>
-              </li>
-              <li>
-                <Link href="/rezervace" className="hover:text-white transition-colors">
+                <Link
+                  href="/rezervace"
+                  className="text-luna-champagne/90 hover:text-luna-ivory transition-colors"
+                >
                   Rezervace
                 </Link>
               </li>
               <li>
-                <Link href="/kontakt" className="hover:text-white transition-colors">
+                <Link
+                  href="/kontakt"
+                  className="text-luna-champagne/90 hover:text-luna-ivory transition-colors"
+                >
                   Kontakt
                 </Link>
               </li>
               <li>
                 <Link
                   href="/ochrana-soukromi"
-                  className="hover:text-white transition-colors"
+                  className="text-luna-champagne/90 hover:text-luna-ivory transition-colors"
                 >
                   Ochrana soukromí
                 </Link>
               </li>
             </ul>
 
-            {/* Sociální sítě */}
-            <div className="flex gap-3 mt-4">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="p-2 rounded-full hover:bg-coffee-700 transition-colors"
-              >
-                <FiInstagram className="w-5 h-5" />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="p-2 rounded-full hover:bg-coffee-700 transition-colors"
-              >
-                <FiFacebook className="w-5 h-5" />
-              </a>
+            <div className="flex gap-2 mt-6">
+              {contact.instagramUrl && (
+                <a
+                  href={contact.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="p-2.5 rounded-full border border-luna-stone/40 hover:border-luna-rose hover:bg-luna-stone/20 transition-all"
+                >
+                  <FiInstagram className="w-5 h-5" />
+                </a>
+              )}
+              {contact.facebookUrl && (
+                <a
+                  href={contact.facebookUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="p-2.5 rounded-full border border-luna-stone/40 hover:border-luna-rose hover:bg-luna-stone/20 transition-all"
+                >
+                  <FiFacebook className="w-5 h-5" />
+                </a>
+              )}
             </div>
           </div>
 
-          {/* Newsletter */}
           <div>
-            <h3 className="text-lg font-sans font-bold text-white mb-4">
+            <h3 className="text-lg font-serif font-semibold text-luna-ivory mb-5">
               Newsletter
             </h3>
-            <p className="text-sm mb-3">
-              Novinky, akce a tipy přímo do schránky. Žádný spam.
+            <p className="text-sm text-luna-champagne/85 mb-4 leading-relaxed">
+              Tipy na péči, novinky ze studia a akční nabídky. Jednou za čas,
+              žádný spam.
             </p>
-            <form onSubmit={handleNewsletter} className="flex gap-2">
+            <form onSubmit={handleNewsletter} className="flex flex-col sm:flex-row gap-2">
               <label htmlFor="footer-newsletter-email" className="sr-only">
                 E-mail pro newsletter
               </label>
@@ -155,18 +201,21 @@ export function Footer() {
                 id="footer-newsletter-email"
                 type="email"
                 required
-                placeholder="jan@domena.cz"
+                placeholder="vas@email.cz"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 rounded-lg border border-coffee-600 bg-coffee-700 px-3 py-2 text-sm text-cream-100 placeholder:text-coffee-400 focus:outline-none focus:ring-2 focus:ring-accent/40"
+                className="flex-1 rounded-md border border-luna-stone/40 bg-luna-ink/50 px-3 py-2.5 text-sm text-luna-ivory placeholder:text-luna-stone focus:outline-none focus:ring-2 focus:ring-luna-rose/50"
               />
               <Button variant="secondary" size="sm" type="submit">
                 Odebírat
               </Button>
             </form>
-            <p className="text-xs text-coffee-400 mt-2">
-              Přihlášením souhlasíte se{" "}
-              <Link href="/ochrana-soukromi" className="underline hover:text-cream-200">
+            <p className="text-xs text-luna-stone mt-2">
+              Odesláním souhlasíte se{" "}
+              <Link
+                href="/ochrana-soukromi"
+                className="underline hover:text-luna-champagne"
+              >
                 zpracováním osobních údajů
               </Link>
               .
@@ -175,7 +224,7 @@ export function Footer() {
             {status === "success" && (
               <Toast
                 variant="success"
-                message="Díky za přihlášení! 🎉"
+                message="Děkujeme za přihlášení."
                 onClose={() => setStatus("idle")}
                 className="mt-3"
               />
@@ -183,7 +232,7 @@ export function Footer() {
             {status === "error" && (
               <Toast
                 variant="error"
-                message="Něco se pokazilo. Zkuste to znovu."
+                message="Zkuste to prosím znovu."
                 onClose={() => setStatus("idle")}
                 className="mt-3"
               />
@@ -191,11 +240,9 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Spodní lišta */}
-        <div className="mt-10 pt-6 border-t border-coffee-700 text-center text-xs text-coffee-400">
+        <div className="mt-14 pt-8 border-t border-luna-stone/25 text-center text-xs text-luna-stone font-sans">
           <p>
-            © {new Date().getFullYear()} Zuzu Café. Všechna práva
-            vyhrazena.
+            © {new Date().getFullYear()} {brandName}. Všechna práva vyhrazena.
           </p>
         </div>
       </div>

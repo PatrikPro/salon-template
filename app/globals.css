@@ -2,21 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===== Globální reset & utility ===== */
-
 @layer base {
-  /* Skip-link pro a11y */
   .skip-link {
-    @apply absolute -top-10 left-4 z-[100] bg-coffee text-white px-4 py-2 rounded-b-md
+    @apply absolute -top-10 left-4 z-[100] bg-luna-ink text-luna-ivory px-4 py-2 rounded-b-md
            transition-all duration-200 focus:top-0;
   }
 
-  /* Focus-visible styl pro všechny interaktivní prvky */
   *:focus-visible {
-    @apply outline-2 outline-offset-2 outline-accent;
+    @apply outline-2 outline-offset-2 outline-luna-rose;
   }
 
-  /* Hladký scroll s respektem k prefers-reduced-motion */
   html {
     scroll-behavior: smooth;
   }
@@ -36,22 +31,52 @@
   }
 
   body {
-    @apply bg-cream text-coffee-800 font-serif antialiased;
+    @apply bg-luna-ivory text-luna-ink font-sans antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-sans font-bold tracking-tight;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif font-medium tracking-tight text-luna-ink;
   }
 }
 
 @layer components {
-  /* Container utility */
   .container-main {
     @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
   }
+
+  .section-eyebrow {
+    @apply text-xs font-sans font-semibold uppercase tracking-[0.2em] text-luna-rose;
+  }
 }
 
-/* ===== Animace ===== */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @keyframes modalIn {
   from {
     opacity: 0;

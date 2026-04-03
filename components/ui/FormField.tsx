@@ -24,7 +24,7 @@ export const InputField = forwardRef<HTMLInputElement, InputFieldProps>(
       <div className="flex flex-col gap-1.5">
         <label
           htmlFor={fieldId}
-          className="text-sm font-sans font-medium text-coffee-700"
+          className="text-sm font-sans font-medium text-luna-stone"
         >
           {label}
         </label>
@@ -36,13 +36,13 @@ export const InputField = forwardRef<HTMLInputElement, InputFieldProps>(
             error ? `${fieldId}-error` : hint ? `${fieldId}-hint` : undefined
           }
           className={cn(
-            "rounded-lg border px-3 py-2.5 text-base font-serif",
-            "bg-white text-coffee-800 placeholder:text-coffee-300",
+            "rounded-lg border px-3 py-2.5 text-base font-sans",
+            "bg-white text-luna-ink placeholder:text-luna-stone/50",
             "transition-colors duration-150",
             "focus:outline-none focus:ring-2 focus:ring-offset-1",
             error
               ? "border-red-400 focus:ring-red-300"
-              : "border-cream-300 focus:ring-accent/40 focus:border-accent",
+              : "border-luna-champagne focus:ring-luna-rose/35 focus:border-luna-rose",
             className
           )}
           {...props}
@@ -57,7 +57,7 @@ export const InputField = forwardRef<HTMLInputElement, InputFieldProps>(
           </p>
         )}
         {hint && !error && (
-          <p id={`${fieldId}-hint`} className="text-sm text-coffee-400 font-sans">
+          <p id={`${fieldId}-hint`} className="text-sm text-luna-stone/70 font-sans">
             {hint}
           </p>
         )}
@@ -80,7 +80,7 @@ export const TextareaField = forwardRef<HTMLTextAreaElement, TextareaFieldProps>
       <div className="flex flex-col gap-1.5">
         <label
           htmlFor={fieldId}
-          className="text-sm font-sans font-medium text-coffee-700"
+          className="text-sm font-sans font-medium text-luna-stone"
         >
           {label}
         </label>
@@ -93,13 +93,13 @@ export const TextareaField = forwardRef<HTMLTextAreaElement, TextareaFieldProps>
           }
           rows={4}
           className={cn(
-            "rounded-lg border px-3 py-2.5 text-base font-serif resize-y",
-            "bg-white text-coffee-800 placeholder:text-coffee-300",
+            "rounded-lg border px-3 py-2.5 text-base font-sans resize-y",
+            "bg-white text-luna-ink placeholder:text-luna-stone/50",
             "transition-colors duration-150",
             "focus:outline-none focus:ring-2 focus:ring-offset-1",
             error
               ? "border-red-400 focus:ring-red-300"
-              : "border-cream-300 focus:ring-accent/40 focus:border-accent",
+              : "border-luna-champagne focus:ring-luna-rose/35 focus:border-luna-rose",
             className
           )}
           {...props}
@@ -110,7 +110,7 @@ export const TextareaField = forwardRef<HTMLTextAreaElement, TextareaFieldProps>
           </p>
         )}
         {hint && !error && (
-          <p id={`${fieldId}-hint`} className="text-sm text-coffee-400 font-sans">
+          <p id={`${fieldId}-hint`} className="text-sm text-luna-stone/70 font-sans">
             {hint}
           </p>
         )}
@@ -135,7 +135,7 @@ export const SelectField = forwardRef<HTMLSelectElement, SelectFieldProps>(
       <div className="flex flex-col gap-1.5">
         <label
           htmlFor={fieldId}
-          className="text-sm font-sans font-medium text-coffee-700"
+          className="text-sm font-sans font-medium text-luna-stone"
         >
           {label}
         </label>
@@ -147,13 +147,13 @@ export const SelectField = forwardRef<HTMLSelectElement, SelectFieldProps>(
             error ? `${fieldId}-error` : hint ? `${fieldId}-hint` : undefined
           }
           className={cn(
-            "rounded-lg border px-3 py-2.5 text-base font-serif appearance-none",
-            "bg-white text-coffee-800",
+            "rounded-lg border px-3 py-2.5 text-base font-sans appearance-none",
+            "bg-white text-luna-ink",
             "transition-colors duration-150",
             "focus:outline-none focus:ring-2 focus:ring-offset-1",
             error
               ? "border-red-400 focus:ring-red-300"
-              : "border-cream-300 focus:ring-accent/40 focus:border-accent",
+              : "border-luna-champagne focus:ring-luna-rose/35 focus:border-luna-rose",
             className
           )}
           {...props}
@@ -170,7 +170,7 @@ export const SelectField = forwardRef<HTMLSelectElement, SelectFieldProps>(
           </p>
         )}
         {hint && !error && (
-          <p id={`${fieldId}-hint`} className="text-sm text-coffee-400 font-sans">
+          <p id={`${fieldId}-hint`} className="text-sm text-luna-stone/70 font-sans">
             {hint}
           </p>
         )}

@@ -1,0 +1,72 @@
+{
+  "brandName": "Luna Studio",
+  "hero": {
+    "title": "Prostor, kde krása dostává čas.",
+    "subtitle": "Prémiová péče o vlasy a beauty služby v elegantním prostředí. Dopřejte si chvíli pro sebe, detailní péči a výsledek, ve kterém se budete cítit skvěle.",
+    "primaryCtaLabel": "Rezervovat termín",
+    "secondaryCtaLabel": "Zobrazit služby",
+    "image": "/images/salon-hero.svg",
+    "imageAlt": "Elegantní beauty studio s teplým světlem a klidnou atmosférou"
+  },
+  "about": {
+    "sectionEyebrow": "O studiu",
+    "title": "Péče, která začíná klidem.",
+    "bodyParagraphs": [
+      "V Luna Studiu věříme, že skutečný výsledek vzniká spojením odbornosti, estetiky a individuálního přístupu. Každá návštěva je prostor zastavit se, nechat o sebe pečovat a odejít s pocitem, že všechno sedí přesně tak, jak má."
+    ],
+    "image": "/images/salon-interior.svg"
+  },
+  "whyUs": {
+    "title": "Proč Luna Studio",
+    "items": [
+      "Individuální přístup",
+      "Prémiové produkty",
+      "Detailní konzultace",
+      "Stylové a klidné prostředí"
+    ]
+  },
+  "aboutPage": {
+    "title": "Náš přístup",
+    "lead": "Profesionální salon ve větším městě — s důrazem na kvalitu služeb, vizuální úroveň a osobní péči.",
+    "storyParagraphs": [
+      "Luna Studio vzniklo z přesvědčení, že krása není spěch. Každý detail — od první konzultace po finální styling — promýšlíme tak, abyste se cítila v bezpečí a věděla, že o vaše vlasy a beauty péči se stará někdo, komu na výsledku skutečně záleží.",
+      "Spojujeme precizní řemeslo s klidnou atmosférou. U nás najdete čas na sebe, férové doporučení a služby, které odpovídají vašemu životnímu stylu — bez kompromisů v kvalitě produktů ani v lidském přístupu."
+    ],
+    "valuesTitle": "Co u nás dostanete",
+    "values": [
+      "Individuální přístup a pečlivá konzultace před každou službou",
+      "Prémiové produkty a šetrné techniky pro zdravé vlasy a přirozený vzhled",
+      "Klidné, elegantní prostředí bez zbytečného spěchu",
+      "Transparentní ceny a srozumitelné doporučení péče domů"
+    ]
+  },
+  "contact": {
+    "address": "Vinohradská 128, Praha 2",
+    "phone": "+420 777 555 222",
+    "email": "hello@lunastudio.cz",
+    "instagramHandle": "@lunastudio.cz",
+    "instagramUrl": "https://instagram.com/lunastudio.cz",
+    "facebookUrl": "",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.5!2d14.451!3d50.075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!5e0!3m2!1scs!2scz!4v1"
+  },
+  "testimonials": [
+    {
+      "quote": "Krásné prostředí, profesionální přístup a výsledek přesně podle představ.",
+      "author": "Petra K."
+    },
+    {
+      "quote": "Salon, kam se člověk vrací nejen kvůli výsledku, ale i kvůli atmosféře.",
+      "author": "Lucie M."
+    },
+    {
+      "quote": "Skvělá péče, detail a příjemný pocit od začátku do konce.",
+      "author": "Tereza N."
+    }
+  ],
+  "servicesSectionTitle": "Vybrané služby",
+  "servicesSectionSubtitle": "Prémiová péče o vlasy a beauty — srozumitelné ceny a prostor pro vaše přání.",
+  "gallerySectionTitle": "Galerie",
+  "gallerySectionSubtitle": "Atmosféra studia, detaily a výsledky naší práce.",
+  "teamSectionTitle": "Náš tým",
+  "teamSectionSubtitle": "Lidé, kteří stojí za každým výsledkem."
+}

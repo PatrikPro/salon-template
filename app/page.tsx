@@ -1,24 +1,26 @@
 import { Hero } from "@/components/sections/Hero";
-import { About } from "@/components/sections/About";
-import { MenuPreview } from "@/components/sections/MenuPreview";
-import { Gallery } from "@/components/sections/Gallery";
-import { Events } from "@/components/sections/Events";
-import { Reviews } from "@/components/sections/Reviews";
+import { AboutStudio } from "@/components/sections/AboutStudio";
+import { WhyUs } from "@/components/sections/WhyUs";
+import { ServiceHighlight } from "@/components/sections/ServiceHighlight";
+import { GallerySection } from "@/components/sections/GallerySection";
+import { PromoBanner } from "@/components/sections/PromoBanner";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { TeamSection } from "@/components/sections/TeamSection";
+import { ReservationCTA } from "@/components/sections/ReservationCTA";
 import { ContactBlock } from "@/components/sections/ContactBlock";
 
-/**
- * Homepage – Zuzu Café
- * Sestavena z jednotlivých sekcí (Server Components).
- */
 export default function HomePage() {
   return (
     <main id="main-content">
       <Hero />
-      <About />
-      <MenuPreview />
-      <Gallery />
-      <Events />
-      <Reviews />
+      <AboutStudio />
+      <WhyUs />
+      <ServiceHighlight />
+      <GallerySection />
+      <PromoBanner />
+      <Testimonials />
+      <TeamSection />
+      <ReservationCTA />
       <ContactBlock />
     </main>
   );

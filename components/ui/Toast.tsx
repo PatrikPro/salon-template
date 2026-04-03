@@ -25,7 +25,8 @@ export function Toast({ variant, message, onClose, className }: ToastProps) {
       aria-live="polite"
       className={cn(
         "flex items-start gap-3 rounded-lg px-4 py-3 text-sm font-sans",
-        variant === "success" && "bg-accent-100 text-accent-700 border border-accent-200",
+        variant === "success" &&
+          "bg-luna-champagne/80 text-luna-ink border border-luna-rose/30",
         variant === "error" && "bg-red-50 text-red-700 border border-red-200",
         className
       )}

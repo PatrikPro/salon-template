@@ -61,7 +61,7 @@ export function Modal({ open, onClose, title, children, className }: ModalProps)
       onClick={handleBackdropClick}
       className={cn(
         // Reset dialog styles
-        "backdrop:bg-coffee-900/40 backdrop:backdrop-blur-sm",
+        "backdrop:bg-luna-ink/50 backdrop:backdrop-blur-sm",
         "bg-transparent p-0 m-0 max-w-full max-h-full",
         "open:flex items-center justify-center",
         // Full viewport overlay
@@ -80,14 +80,14 @@ export function Modal({ open, onClose, title, children, className }: ModalProps)
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-1 rounded-full hover:bg-cream-200 transition-colors"
+          className="absolute top-4 right-4 p-1 rounded-full hover:bg-luna-champagne transition-colors"
           aria-label="Zavřít"
         >
-          <FiX className="w-5 h-5 text-coffee-600" />
+          <FiX className="w-5 h-5 text-luna-stone" />
         </button>
 
         {/* Title */}
-        <h2 className="text-xl font-sans font-bold text-coffee pr-8 mb-4">
+        <h2 className="text-xl font-serif font-semibold text-luna-ink pr-8 mb-4">
           {title}
         </h2>
 

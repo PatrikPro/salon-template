@@ -2,35 +2,34 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Ochrana soukromí",
-  description: "Informace o zpracování osobních údajů – Zuzu Café.",
+  description: "Informace o zpracování osobních údajů – Luna Studio.",
 };
 
 /**
  * Stránka Ochrana soukromí / GDPR.
- * UNSPECIFIED – texty jsou placeholder, upravte dle skutečného právního rámce.
+ * Texty jsou orientační — před produkcí konzultujte s právníkem.
  */
 export default function PrivacyPage() {
   return (
-    <main id="main-content" className="py-12 md:py-20">
+    <main id="main-content" className="py-14 md:py-22">
       <div className="container-main max-w-3xl">
-        <h1 className="text-4xl font-sans font-bold text-coffee mb-8">
+        <h1 className="text-4xl font-serif font-medium text-luna-ink mb-8">
           Ochrana soukromí
         </h1>
 
-        <div className="prose prose-coffee font-serif space-y-6 text-coffee-700">
-          <section>
-            <h2 className="text-2xl font-sans font-bold text-coffee">
+        <div className="space-y-8 text-luna-stone font-sans leading-relaxed">
+          <section className="space-y-3">
+            <h2 className="text-2xl font-serif font-medium text-luna-ink">
               1. Správce osobních údajů
             </h2>
-            {/* UNSPECIFIED – placeholder */}
             <p>
-              Správcem osobních údajů je Zuzu Café, Školská 12,
-              Praha 2. E‑mail: kontakt@zuzucafe.cz.
+              Správcem osobních údajů je Luna Studio, Vinohradská 128, Praha 2.
+              E‑mail: hello@lunastudio.cz.
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-sans font-bold text-coffee">
+          <section className="space-y-3">
+            <h2 className="text-2xl font-serif font-medium text-luna-ink">
               2. Jaké údaje zpracováváme
             </h2>
             <ul className="list-disc pl-6 space-y-1">
@@ -38,8 +37,9 @@ export default function PrivacyPage() {
                 <strong>Kontaktní formulář:</strong> jméno, e-mail, zpráva
               </li>
               <li>
-                <strong>Rezervace:</strong> jméno, e-mail, telefon (volitelně),
-                datum a čas
+                <strong>Rezervace:</strong> probíhá u externího poskytovatele
+                (např. Reservio). Údaje zadávané v jeho widgetu zpracovává
+                tento poskytovatel podle svých podmínek.
               </li>
               <li>
                 <strong>Newsletter:</strong> e-mailová adresa
@@ -47,18 +47,18 @@ export default function PrivacyPage() {
             </ul>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-sans font-bold text-coffee">
+          <section className="space-y-3">
+            <h2 className="text-2xl font-serif font-medium text-luna-ink">
               3. Účel zpracování
             </h2>
             <p>
-              Údaje zpracováváme za účelem odpovědi na vaše dotazy, správy
-              rezervací a zasílání novinek (pouze s vaším souhlasem).
+              Údaje zpracováváme za účelem odpovědi na dotazy a zasílání
+              novinek (pouze s vaším souhlasem).
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-sans font-bold text-coffee">
+          <section className="space-y-3">
+            <h2 className="text-2xl font-serif font-medium text-luna-ink">
               4. Doba uchovávání
             </h2>
             <p>
@@ -67,31 +67,30 @@ export default function PrivacyPage() {
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-sans font-bold text-coffee">
+          <section className="space-y-3">
+            <h2 className="text-2xl font-serif font-medium text-luna-ink">
               5. Vaše práva
             </h2>
             <p>
               Máte právo na přístup, opravu, výmaz, omezení zpracování a
               přenositelnost údajů. Pro uplatnění práv nás kontaktujte na
-              kontakt@zuzucafe.cz.
+              hello@lunastudio.cz.
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-sans font-bold text-coffee">
+          <section className="space-y-3">
+            <h2 className="text-2xl font-serif font-medium text-luna-ink">
               6. Cookies
             </h2>
             <p>
-              Tento web používá pouze nezbytné technické cookies. Žádné
-              analytické ani reklamní cookies nejsou aktivní bez vašeho
-              souhlasu.
+              Tento web používá pouze nezbytné technické cookies. Analytické či
+              reklamní cookies nejsou aktivní bez vašeho souhlasu.
             </p>
           </section>
 
-          <p className="text-sm text-coffee-400 mt-8">
-            Poslední aktualizace: únor 2026. Tento text je placeholder –
-            doporučujeme konzultaci s právníkem.
+          <p className="text-sm text-luna-stone/70 mt-8">
+            Poslední aktualizace: duben 2026. Tento text je šablona — před
+            ostrým provozem jej nechte zkontrolovat právníkem.
           </p>
         </div>
       </div>

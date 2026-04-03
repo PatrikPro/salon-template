@@ -8,12 +8,8 @@ export const size = {
 };
 
 export const contentType = "image/png";
-export const alt =
-  "Zuzu Café – Výběrová káva v centru Prahy";
+export const alt = "Luna Studio – Prémiový beauty salon";
 
-/**
- * Generovaný OG image pro sociální sítě.
- */
 export default async function OgImage() {
   return new ImageResponse(
     (
@@ -25,65 +21,53 @@ export default async function OgImage() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #F5EDE2 0%, #E8D9C8 100%)",
-          fontFamily: "sans-serif",
+          background: "linear-gradient(145deg, #F8F4EF 0%, #E7D9CC 55%, #C89B8A 100%)",
+          fontFamily: "serif",
         }}
       >
-        {/* Coffee bean icon */}
         <div
           style={{
-            fontSize: 80,
-            marginBottom: 20,
+            fontSize: 56,
+            fontWeight: 600,
+            color: "#1F1A17",
+            textAlign: "center",
+            lineHeight: 1.15,
+            maxWidth: "85%",
           }}
         >
-          ☕
+          Luna Studio
         </div>
-
-        {/* Title */}
         <div
           style={{
-            fontSize: 60,
-            fontWeight: 900,
-            color: "#6B4F3A",
+            fontSize: 26,
+            color: "#6F625B",
+            marginTop: 20,
             textAlign: "center",
-            lineHeight: 1.2,
             maxWidth: "80%",
           }}
         >
-          Zuzu Café
+          Prostor, kde krása dostává čas.
         </div>
-
-        {/* Subtitle */}
-        <div
-          style={{
-            fontSize: 28,
-            color: "#6B4F3A",
-            opacity: 0.7,
-            marginTop: 16,
-            textAlign: "center",
-          }}
-        >
-          Káva, co tě na chvíli zpomalí.
-        </div>
-
-        {/* Bottom badges */}
         <div
           style={{
             display: "flex",
-            gap: 16,
-            marginTop: 40,
+            gap: 14,
+            marginTop: 36,
+            flexWrap: "wrap",
+            justifyContent: "center",
           }}
         >
-          {["Výběrová káva", "Work-friendly", "Praha 2"].map((text) => (
+          {["Prémiová péče", "Praha", "Rezervace online"].map((text) => (
             <div
               key={text}
               style={{
-                background: "#7FB77E",
-                color: "white",
-                padding: "8px 20px",
-                borderRadius: 24,
-                fontSize: 18,
+                background: "#1F1A17",
+                color: "#F8F4EF",
+                padding: "10px 22px",
+                borderRadius: 4,
+                fontSize: 17,
                 fontWeight: 600,
+                fontFamily: "sans-serif",
               }}
             >
               {text}
@@ -92,8 +76,6 @@ export default async function OgImage() {
         </div>
       </div>
     ),
-    {
-      ...size,
-    }
+    { ...size }
   );
 }

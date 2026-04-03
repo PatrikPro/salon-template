@@ -11,7 +11,7 @@ import { contactSchema, type ContactFormData } from "@/lib/forms/schemas";
 const TOPIC_OPTIONS = [
   { value: "", label: "Vyber téma (nepovinné)" },
   { value: "dotaz", label: "Obecný dotaz" },
-  { value: "rezervace", label: "Rezervace / velká skupina" },
+  { value: "rezervace", label: "Rezervace / termín" },
   { value: "spoluprace", label: "Spolupráce" },
   { value: "feedback", label: "Zpětná vazba" },
   { value: "jine", label: "Jiné" },
@@ -80,7 +80,11 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="space-y-5 relative"
+      noValidate
+    >
       <InputField
         label="Jméno"
         placeholder="Jan Novák"

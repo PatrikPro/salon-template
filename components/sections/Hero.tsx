@@ -1,55 +1,52 @@
-import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/Button";
-import { Badge } from "@/components/ui/Badge";
+import { loadSiteContent } from "@/lib/cms/loadContent";
+import { ButtonLink } from "@/components/ui/ButtonLink";
 
-/**
- * Hero sekce – headline, subheadline, CTA, badge s klíčovými features.
- */
-export function Hero() {
+export async function Hero() {
+  const site = await loadSiteContent();
+  const { hero } = site;
+
   return (
-    <section className="relative overflow-hidden bg-cream">
-      <div className="container-main py-16 md:py-24 lg:py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          {/* Text */}
-          <div className="space-y-6 text-center lg:text-left">
-            {/* Feature badge */}
-            <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-              <Badge variant="accent">☕ Výběrová káva</Badge>
-              <Badge variant="accent">🌱 Ovesné mléko</Badge>
-              <Badge variant="accent">💻 Work‑friendly</Badge>
-            </div>
-
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-sans font-bold text-coffee leading-tight">
-              Káva, co tě na chvíli zpomalí.
-            </h1>
-
-            <p className="text-lg md:text-xl text-coffee-700 font-serif max-w-xl mx-auto lg:mx-0">
-              Světlý prostor, rychlá Wi‑Fi a zásuvky u každého stolu. Ideální
-              pro učení, práci i setkání s přáteli.
+    <section className="relative overflow-hidden bg-luna-ivory">
+      <div className="container-main py-16 md:py-24 lg:py-28">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="space-y-8 text-center lg:text-left order-2 lg:order-1 animate-fade-up">
+            <p className="section-eyebrow justify-center lg:justify-start flex">
+              {site.brandName}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-              <Link href="/rezervace">
-                <Button size="lg">Rezervovat stůl</Button>
-              </Link>
-              <Link href="/menu">
-                <Button variant="secondary" size="lg">
-                  Zobrazit menu
-                </Button>
-              </Link>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[3.5rem] leading-[1.08] font-serif font-medium text-luna-ink">
+              {hero.title}
+            </h1>
+
+            <p className="text-lg md:text-xl text-luna-stone font-sans font-light leading-relaxed max-w-xl mx-auto lg:mx-0">
+              {hero.subtitle}
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
+              <ButtonLink href="/rezervace" size="lg">
+                {hero.primaryCtaLabel}
+              </ButtonLink>
+              <ButtonLink href="/sluzby" variant="secondary" size="lg">
+                {hero.secondaryCtaLabel}
+              </ButtonLink>
             </div>
           </div>
 
-          {/* Obrázek */}
-          <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
-            <Image
-              src="/images/hero.svg"
-              alt="Útulný interiér kavárny s kávou a notebookem na stole"
-              fill
-              className="object-cover"
-              priority
-              sizes="(max-width: 1024px) 100vw, 50vw"
+          <div className="relative order-1 lg:order-2">
+            <div className="relative w-full aspect-[4/5] md:aspect-[5/6] rounded-sm overflow-hidden shadow-2xl shadow-luna-ink/10 ring-1 ring-luna-champagne/80">
+              <Image
+                src={hero.image}
+                alt={hero.imageAlt ?? ""}
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+            <div
+              className="absolute -bottom-4 -left-4 w-32 h-32 bg-luna-rose/20 rounded-full blur-2xl -z-10 hidden md:block"
+              aria-hidden
             />
           </div>
         </div>

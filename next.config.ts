@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* Konfigurace Next.js */
+  async redirects() {
+    return [
+      {
+        source: "/menu",
+        destination: "/sluzby",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

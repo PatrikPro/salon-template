@@ -7,9 +7,7 @@ export const size = {
 
 export const contentType = "image/png";
 
-/**
- * Generovaná favicon – coffee bean stylizace.
- */
+/** Generovaná favicon – minimalistický symbol ve stylu značky. */
 export default function Icon() {
   return new ImageResponse(
     (
@@ -20,16 +18,17 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#6B4F3A",
+          background: "#1F1A17",
           borderRadius: "20%",
-          fontSize: 20,
+          color: "#F8F4EF",
+          fontSize: 18,
+          fontWeight: 600,
+          fontFamily: "serif",
         }}
       >
-        ☕
+        L
       </div>
     ),
-    {
-      ...size,
-    }
+    { ...size }
   );
 }

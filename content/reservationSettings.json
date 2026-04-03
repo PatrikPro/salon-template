@@ -1,0 +1,8 @@
+{
+  "providerName": "Reservio",
+  "bookingMode": "button",
+  "bookingUrl": "https://www.reservio.com",
+  "iframeUrl": "",
+  "ctaLabel": "Rezervovat termín",
+  "helperText": "Termín si vyberete v externím rezervačním systému. Po kliknutí budete přesměrováni na bezpečnou stránku poskytovatele."
+}

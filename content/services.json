@@ -1,0 +1,121 @@
+{
+  "categories": [
+    {
+      "id": "strih-styling",
+      "name": "Střih a styling",
+      "description": "Tvar, objem a finální look podle vašeho životního stylu.",
+      "order": 1
+    },
+    {
+      "id": "barveni",
+      "name": "Barvení",
+      "description": "Odrostky, tónování i moderní techniky pro přirozený barevný efekt.",
+      "order": 2
+    },
+    {
+      "id": "pece",
+      "name": "Regenerační péče",
+      "description": "Hloubková péče pro lesk, sílu a zdravý vzhled vlasů.",
+      "order": 3
+    },
+    {
+      "id": "lashes-brows",
+      "name": "Lashes & Brows",
+      "description": "Zvýraznění pohledu s přirozeným výsledkem.",
+      "order": 4
+    },
+    {
+      "id": "nails",
+      "name": "Nails",
+      "description": "Elegantní modeláž s důrazem na detail a hygienu.",
+      "order": 5
+    }
+  ],
+  "items": [
+    {
+      "id": "damsky-strih",
+      "name": "Dámský střih",
+      "description": "Střih s konzultací, mytím a finálním stylingem.",
+      "priceLabel": "890 Kč",
+      "priceFromKc": 890,
+      "category": "strih-styling",
+      "badge": "Oblíbené",
+      "image": "/images/salon-styling.svg",
+      "order": 1,
+      "available": true
+    },
+    {
+      "id": "foukana",
+      "name": "Foukaná a styling",
+      "description": "Lehký objem, uhlazený look nebo přirozené vlny podle přání.",
+      "priceLabel": "690 Kč",
+      "priceFromKc": 690,
+      "category": "strih-styling",
+      "order": 2,
+      "available": true
+    },
+    {
+      "id": "odrosty",
+      "name": "Barvení odrostů",
+      "description": "Precizní sjednocení barvy a přirozený výsledek.",
+      "priceLabel": "1 490 Kč",
+      "priceFromKc": 1490,
+      "category": "barveni",
+      "order": 1,
+      "available": true
+    },
+    {
+      "id": "balayage",
+      "name": "Balayage",
+      "description": "Rozjasnění a jemné přechody pro moderní, přirozený efekt.",
+      "priceLabel": "od 2 790 Kč",
+      "priceFromKc": 2790,
+      "category": "barveni",
+      "badge": "Novinka",
+      "image": "/images/salon-detail.svg",
+      "order": 2,
+      "available": true
+    },
+    {
+      "id": "regenerace",
+      "name": "Hloubková regenerace",
+      "description": "Intenzivní péče pro obnovu lesku, síly a vitality vlasů.",
+      "priceLabel": "790 Kč",
+      "priceFromKc": 790,
+      "category": "pece",
+      "order": 1,
+      "available": true
+    },
+    {
+      "id": "lash-lifting",
+      "name": "Lash lifting",
+      "description": "Přirozeně zvýrazněný pohled bez každodenní námahy.",
+      "priceLabel": "990 Kč",
+      "priceFromKc": 990,
+      "category": "lashes-brows",
+      "order": 1,
+      "available": true
+    },
+    {
+      "id": "brow-styling",
+      "name": "Brow styling",
+      "description": "Úprava a zvýraznění obočí podle rysů obličeje.",
+      "priceLabel": "690 Kč",
+      "priceFromKc": 690,
+      "category": "lashes-brows",
+      "order": 2,
+      "available": true
+    },
+    {
+      "id": "gelova-modelaz",
+      "name": "Gelová modeláž",
+      "description": "Elegantní, upravené nehty s důrazem na detail.",
+      "priceLabel": "1 090 Kč",
+      "priceFromKc": 1090,
+      "category": "nails",
+      "image": "/images/salon-nails.svg",
+      "order": 1,
+      "available": true
+    }
+  ]
+}
