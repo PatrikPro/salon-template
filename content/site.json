@@ -5,7 +5,7 @@
     "subtitle": "Prémiová péče o vlasy a beauty služby v elegantním prostředí. Dopřejte si chvíli pro sebe, detailní péči a výsledek, ve kterém se budete cítit skvěle.",
     "primaryCtaLabel": "Rezervovat termín",
     "secondaryCtaLabel": "Zobrazit služby",
-    "image": "/images/salon-hero.svg",
+    "image": "/images/salon-hero.jpg",
     "imageAlt": "Elegantní beauty studio s teplým světlem a klidnou atmosférou"
   },
   "about": {
@@ -14,7 +14,7 @@
     "bodyParagraphs": [
       "V Luna Studiu věříme, že skutečný výsledek vzniká spojením odbornosti, estetiky a individuálního přístupu. Každá návštěva je prostor zastavit se, nechat o sebe pečovat a odejít s pocitem, že všechno sedí přesně tak, jak má."
     ],
-    "image": "/images/salon-interior.svg"
+    "image": "/images/salon-interior.jpg"
   },
   "whyUs": {
     "title": "Proč Luna Studio",

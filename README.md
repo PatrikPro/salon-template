@@ -91,15 +91,16 @@ Výchozí hodnoty a sloučení s fallbacky: `lib/cms/loadContent.ts`.
 
 ---
 
-## AI / stock prompty pro fotografie
+## Fotografie studia (`public/images/`)
 
-Až budete chtít nahradit SVG placeholdery v `public/images/`:
+Aktuálně používáme **JPEG soubory** `salon-hero.jpg`, `salon-interior.jpg`, `salon-styling.jpg`, `salon-detail.jpg`, `salon-nails.jpg`, `salon-brows.jpg` — vycházejí z těchto briefů (pro případná další generování nebo stock):
 
-1. **Hero / interiér:** „Elegant salon interior, warm neutral tones, champagne and ivory palette, soft daylight, premium beauty studio, editorial photography“
-2. **Styling:** „Female hair stylist working with client, soft natural light, luxury atmosphere, shallow depth of field“
-3. **Detail vlasů:** „Close-up of healthy glossy styled hair, editorial beauty, neutral background“
-4. **Pracovní místo:** „Beauty workspace with premium hair products, clean minimal aesthetic, rose gold accents“
-5. **Nails:** „Elegant manicure detail on neutral background, high-end nail studio“
+1. **Hero / interiér** → `salon-hero.jpg` — „Elegant salon interior, warm neutral tones, champagne and ivory palette, soft daylight, premium beauty studio, editorial photography“
+2. **Styling** → `salon-styling.jpg` — „Female hair stylist working with client, soft natural light, luxury atmosphere, shallow depth of field“
+3. **Detail vlasů** → `salon-detail.jpg` — „Close-up of healthy glossy styled hair, editorial beauty, neutral background“
+4. **Pracovní místo** → `salon-interior.jpg` — „Beauty workspace with premium hair products, clean minimal aesthetic, rose gold accents“
+5. **Nails** → `salon-nails.jpg` — „Elegant manicure detail on neutral background, high-end nail studio“
+6. **Lashes & brows (doplněk)** → `salon-brows.jpg` — profesionální úprava obočí, teplé neutrální tóny, editorial beauty
 
 ---
 

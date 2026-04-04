@@ -2,37 +2,37 @@
   "images": [
     {
       "id": "g1",
-      "src": "/images/salon-hero.svg",
+      "src": "/images/salon-hero.jpg",
       "alt": "Elegantní interiér beauty studia v teplých neutrálních tónech",
       "order": 1
     },
     {
       "id": "g2",
-      "src": "/images/salon-styling.svg",
+      "src": "/images/salon-styling.jpg",
       "alt": "Detail práce stylistky s vlasovou texturou, jemné denní světlo",
       "order": 2
     },
     {
       "id": "g3",
-      "src": "/images/salon-interior.svg",
-      "alt": "Klidný kout studia s prémiovou atmosférou",
+      "src": "/images/salon-interior.jpg",
+      "alt": "Pracovní plocha s prémiovými produkty a doplňky studia",
       "order": 3
     },
     {
       "id": "g4",
-      "src": "/images/salon-detail.svg",
+      "src": "/images/salon-detail.jpg",
       "alt": "Zdravé lesklé vlasy po péči, editorial beauty styl",
       "order": 4
     },
     {
       "id": "g5",
-      "src": "/images/salon-nails.svg",
-      "alt": "Beauty pracovní místo s důrazem na čistotu a estetiku",
+      "src": "/images/salon-nails.jpg",
+      "alt": "Elegantní manikúra v neutrálních tónech",
       "order": 5
     },
     {
       "id": "g6",
-      "src": "/images/salon-brows.svg",
+      "src": "/images/salon-brows.jpg",
       "alt": "Jemné zvýraznění obočí a přirozený vzhled",
       "order": 6
     }

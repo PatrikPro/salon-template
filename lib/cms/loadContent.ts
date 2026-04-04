@@ -20,13 +20,13 @@ const defaultSite: SiteContent = {
     subtitle: "",
     primaryCtaLabel: "Rezervovat termín",
     secondaryCtaLabel: "Zobrazit služby",
-    image: "/images/salon-hero.svg",
+    image: "/images/salon-hero.jpg",
     imageAlt: "",
   },
   about: {
     title: "O studiu",
     bodyParagraphs: [],
-    image: "/images/salon-interior.svg",
+    image: "/images/salon-interior.jpg",
   },
   whyUs: { title: "Proč my", items: [] },
   aboutPage: {

@@ -40,7 +40,7 @@
       "priceFromKc": 890,
       "category": "strih-styling",
       "badge": "Oblíbené",
-      "image": "/images/salon-styling.svg",
+      "image": "/images/salon-styling.jpg",
       "order": 1,
       "available": true
     },
@@ -72,7 +72,7 @@
       "priceFromKc": 2790,
       "category": "barveni",
       "badge": "Novinka",
-      "image": "/images/salon-detail.svg",
+      "image": "/images/salon-detail.jpg",
       "order": 2,
       "available": true
     },
@@ -113,7 +113,7 @@
       "priceLabel": "1 090 Kč",
       "priceFromKc": 1090,
       "category": "nails",
-      "image": "/images/salon-nails.svg",
+      "image": "/images/salon-nails.jpg",
       "order": 1,
       "available": true
     }
