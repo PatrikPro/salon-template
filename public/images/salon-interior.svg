@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
-  <rect width="800" height="500" fill="#E7D9CC"/>
-  <rect x="100" y="120" width="600" height="260" rx="12" fill="#F8F4EF" stroke="#C89B8A" stroke-width="2" opacity="0.9"/>
-  <rect x="180" y="200" width="80" height="160" rx="4" fill="#1F1A17" opacity="0.06"/>
-  <rect x="320" y="180" width="160" height="12" rx="4" fill="#C89B8A" opacity="0.5"/>
-  <rect x="320" y="210" width="120" height="8" rx="2" fill="#6F625B" opacity="0.2"/>
-  <circle cx="580" cy="220" r="40" fill="#C89B8A" opacity="0.3"/>
-  <text x="400" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#6F625B">placeholder  klidný kout studia</text>
-</svg>

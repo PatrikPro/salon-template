@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
-  <rect width="800" height="500" fill="#E7D9CC"/>
-  <ellipse cx="400" cy="260" rx="220" ry="140" fill="#F8F4EF" opacity="0.9"/>
-  <path d="M300 250 Q400 220 500 250" stroke="#1F1A17" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.25"/>
-  <path d="M310 265 Q400 245 490 265" stroke="#6F625B" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.35"/>
-  <circle cx="340" cy="240" r="6" fill="#C89B8A" opacity="0.5"/>
-  <circle cx="460" cy="240" r="6" fill="#C89B8A" opacity="0.5"/>
-  <text x="400" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#6F625B">placeholder  lashes &amp; brows</text>
-</svg>

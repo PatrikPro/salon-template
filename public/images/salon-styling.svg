@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
-  <rect width="800" height="500" fill="#1F1A17"/>
-  <ellipse cx="400" cy="240" rx="180" ry="200" fill="#6F625B" opacity="0.35"/>
-  <path d="M320 180c20 60 140 60 160 0" stroke="#C89B8A" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.7"/>
-  <path d="M340 260 Q400 320 460 260" stroke="#E7D9CC" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.5"/>
-  <text x="400" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#E7D9CC" opacity="0.7">placeholder  styling / tým</text>
-</svg>

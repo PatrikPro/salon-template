@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
-  <rect width="800" height="500" fill="#F8F4EF"/>
-  <rect x="60" y="80" width="680" height="340" rx="8" fill="#E7D9CC" opacity="0.5"/>
-  <ellipse cx="400" cy="200" rx="120" ry="140" fill="#C89B8A" opacity="0.25"/>
-  <path d="M280 320c40-80 200-80 240 0" stroke="#6F625B" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
-  <rect x="150" y="360" width="500" height="8" rx="4" fill="#1F1A17" opacity="0.08"/>
-  <text x="400" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#6F625B">placeholder  elegantní interiér salonu (nahrate fotografií)</text>
-</svg>
