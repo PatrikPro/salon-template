@@ -32,7 +32,7 @@ export async function TeamSection() {
               <div className="relative aspect-[4/5] max-h-80 w-full">
                 <Image
                   src={member.image}
-                  alt=""
+                  alt={`${member.name} – ${member.role}`}
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"

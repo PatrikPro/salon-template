@@ -35,7 +35,7 @@ export async function PromoBanner() {
             <div className="relative aspect-[4/3] rounded-sm overflow-hidden ring-1 ring-luna-stone/30">
               <Image
                 src={promo.image}
-                alt=""
+                alt={promo.headline}
                 fill
                 className="object-cover opacity-95"
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -38,7 +38,7 @@ export default async function TeamPage() {
                 <div className="relative aspect-[4/5] max-h-[420px] w-full">
                   <Image
                     src={member.image}
-                    alt=""
+                    alt={`${member.name} – ${member.role}`}
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"

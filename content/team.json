@@ -7,6 +7,14 @@
       "bio": "Více než desetiletá praxe v prémiové vlasové kosmetice. Zaměřuji se na přirozené střihy, barvení a celkový obraz klientky. Věřím, že skvělý výsledek začíná nasloucháním.",
       "image": "/images/salon-styling.jpg",
       "order": 1
+    },
+    {
+      "id": "luna-specialist",
+      "name": "Karolína Dvořáková",
+      "role": "Beauty specialistka · lashes & brows",
+      "bio": "Specializuji se na lash lifting, modeláž obočí a nehtový design. Mým cílem je přirozené zvýraznění, které podtrhne vaši osobnost — bez přehánění, s citem pro detail.",
+      "image": "/images/salon-brows.jpg",
+      "order": 2
     }
   ]
 }

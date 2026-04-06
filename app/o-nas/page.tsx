@@ -27,7 +27,7 @@ export default async function AboutPage() {
         <div className="relative aspect-[16/10] rounded-sm overflow-hidden mb-14 shadow-lg">
           <Image
             src={about.image}
-            alt=""
+            alt="Interiér a atmosféra studia Luna Studio"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 48rem"

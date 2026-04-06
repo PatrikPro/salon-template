@@ -51,6 +51,7 @@
       "priceLabel": "690 Kč",
       "priceFromKc": 690,
       "category": "strih-styling",
+      "image": "/images/salon-hero.jpg",
       "order": 2,
       "available": true
     },
@@ -61,6 +62,7 @@
       "priceLabel": "1 490 Kč",
       "priceFromKc": 1490,
       "category": "barveni",
+      "image": "/images/salon-detail.jpg",
       "order": 1,
       "available": true
     },
@@ -83,6 +85,7 @@
       "priceLabel": "790 Kč",
       "priceFromKc": 790,
       "category": "pece",
+      "image": "/images/salon-interior.jpg",
       "order": 1,
       "available": true
     },
@@ -93,6 +96,7 @@
       "priceLabel": "990 Kč",
       "priceFromKc": 990,
       "category": "lashes-brows",
+      "image": "/images/salon-brows.jpg",
       "order": 1,
       "available": true
     },
@@ -103,6 +107,7 @@
       "priceLabel": "690 Kč",
       "priceFromKc": 690,
       "category": "lashes-brows",
+      "image": "/images/salon-brows.jpg",
       "order": 2,
       "available": true
     },
